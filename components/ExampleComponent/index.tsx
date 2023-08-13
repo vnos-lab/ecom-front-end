@@ -6,6 +6,7 @@ import emptyFn from "@/constants/emptyFn";
 import styles from "./ExampleComponent.module.css";
 
 interface ExampleComponentProps {
+  label: string;
   onClick?: () => void;
   className?: string;
 }
@@ -18,11 +19,11 @@ interface ExampleComponentProps {
  */
 
 function ExampleComponent(props: ExampleComponentProps) {
-  const { onClick, className } = props;
+  const { label, onClick = emptyFn, className } = props;
 
   return (
     <div className={cx(styles.Component, className)}>
-      <p> Example Component</p>
+      <p>{label}</p>
 
       <button type="button" onClick={onClick}>
         Click me
@@ -30,10 +31,5 @@ function ExampleComponent(props: ExampleComponentProps) {
     </div>
   );
 }
-
-ExampleComponent.defaultProps = {
-  className: "",
-  onClick: emptyFn,
-};
 
 export default memo(ExampleComponent);

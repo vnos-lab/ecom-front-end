@@ -1,0 +1,11 @@
+.Link {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: theme('colors.transparent');
+  transition: text-decoration-color 0.3s ease-in-out;
+
+  &:hover,
+  &.Active {
+    text-decoration-color: theme('colors.mx-black-50p');
+  }
+}
