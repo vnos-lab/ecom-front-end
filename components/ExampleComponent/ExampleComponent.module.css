@@ -1,0 +1,11 @@
+/* Every component should have the .Component Wrapper class */
+.Component {
+  .Container {
+    .Wrapper {
+      .Title {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+    }
+  }
+}

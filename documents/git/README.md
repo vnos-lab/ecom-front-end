@@ -20,15 +20,10 @@ Note:
 * Must merge back into: `develop`
 * Branch naming convention:
   * Except `main`, `develop` and
-  * Must be `[tracker]/message`, if you use another tool to manage the Tasks, use that task id for Branch Name:
-    * `Tracker`:
-      * `task` for normal task, feature.
-      * `fix` or `hotfix` for bug fix.
-      * `release` for release branch from `develop` to `main` for stable version.
-	  
-    * `id-of-task` for example: `212-Create-XXX`.
+  * Must be `[id]/message`, if you use another tool to manage the Tasks, use that task id for Branch Name:
+    * `id-of-task` for example: `212/Create-XXX`.
     * `message`: the short and meaningful purpose of the pull request
-    * Example of branch name: `212-Create-XXX`, `234/fix-xxx`, `234/hotfix-xxx`, `234/release-xxx`.
+    * Example of branch name: `212/Create-XXX`, `234/fix-xxx`, `234/hotfix-xxx`, `234/release-xxx`.
 
 ### Recommend workflow:
 1. Create a new branch from `develop` branch.
