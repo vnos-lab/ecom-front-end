@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "eslint": "eslint --fix --ext .ts,.tsx ."
+    "eslint": "eslint --fix --ext .ts,.tsx .",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@types/node": "20.4.10",
@@ -35,13 +37,23 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.3.2",
+    "@storybook/addon-interactions": "^7.3.2",
+    "@storybook/addon-links": "^7.3.2",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.3.2",
+    "@storybook/nextjs": "^7.3.2",
+    "@storybook/react": "^7.3.2",
+    "@storybook/testing-library": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "^6.3.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
-    "prettier": "^3.0.1"
+    "eslint-plugin-storybook": "^0.6.13",
+    "prettier": "^3.0.1",
+    "storybook": "^7.3.2"
   },
   "engines": {
     "node": ">=18.0.0 <=19.8.1"

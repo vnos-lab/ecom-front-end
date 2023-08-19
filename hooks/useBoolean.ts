@@ -1,5 +1,6 @@
 /**
  * useBoolean
+ * @description Boolean state management
  * @param defaultValue
  * @returns { value, setValue, setTrue, setFalse, toggle }
  * @example
