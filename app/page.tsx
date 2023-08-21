@@ -1,6 +1,6 @@
 import React from "react";
 
-import FlashSales from "./home/FlashSales";
+import FlashSales from "../components/FlashSales";
 import HeroBanner from "./home/HeroBanner";
 
 export default function Home() {
