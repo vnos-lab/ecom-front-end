@@ -30,7 +30,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetTimestamp }) => {
   }, [targetTimestamp]);
 
   return (
-    <div className="flex">
+    <div className={Styles.bodyCountDown}>
       <section>
         <p className={Styles.nameItemTime}>Days</p>
         <p className={Styles.valueTime}>{timeLeft.days}</p>

@@ -1,0 +1,28 @@
+.Section_boxTitle {
+    display: flex;
+    align-items: center;
+}
+.Section_Space {
+    width: 20px;
+    height: 40px;
+    background-color: #DB4444;
+    border-radius: 5px;
+}
+.Section_textTitle {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; 
+    color: #DB4444;
+    margin-left: 16px;
+}
+/* .Section_category {
+    margin-top: 20px;
+} */
+.Section_CategoryTitle {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1.44px;
+    color: var(--text-2, #000);
+}

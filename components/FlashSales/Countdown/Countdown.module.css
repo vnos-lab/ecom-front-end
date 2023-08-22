@@ -21,3 +21,9 @@
     font-weight: bold;
     margin: 9px 17px 0px 17px;
 }
+.bodyCountDown {
+    display: flex;
+    align-items: end;
+    margin-left: 100px;
+    margin-bottom: 6px;
+}
