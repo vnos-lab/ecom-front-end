@@ -9,7 +9,7 @@ const App: React.FC = () => {
     titleCategory: "Flash Sales"
   }
   return (
-    <div className="flex">
+    <div className="flex h-[103px]">
       <SectionTitle dataSection={dataSection}/>
       <Countdown targetTimestamp={targetTimestamp} />
     </div>
