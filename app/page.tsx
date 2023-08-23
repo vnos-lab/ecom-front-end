@@ -1,8 +1,7 @@
 import React from "react";
 
-import FlashSales from "../components/FlashSales";
-import HeroBanner from "./home/HeroBanner";
-import SectionTitle from "@/components/SectionTitle";
+import FlashSales from "@/components/FlashSales";
+import HeroBanner from "@/app/home/HeroBanner";
 
 export default function Home() {
   return (

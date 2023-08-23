@@ -2,15 +2,17 @@ import * as React from 'react';
 import Styles from "./Section.module.css";
 
 export interface SectionTitleProps {
-    dataSection: Object;
-    title: String
+  dataSection: {
+    title: string;
+    titleCategory: string;
+  }
 }
 
 export default function SectionTitle (props: SectionTitleProps) {
   return (
     <div>
       <section className={Styles.Section_boxTitle}>
-        <div className={Styles.Section_Space}></div>
+        <div className={Styles.Section_Space} />
         <p className={Styles.Section_textTitle}>{props.dataSection.title}</p>
       </section>
       <section className={Styles.Section_category}>

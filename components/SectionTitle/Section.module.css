@@ -12,8 +12,8 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 20px; 
-    color: #DB4444;
+    line-height: 20px; /* 125% */
+    color: var(--secondary-2, #DB4444);
     margin-left: 16px;
 }
 /* .Section_category {
@@ -23,6 +23,8 @@
     font-size: 36px;
     font-style: normal;
     font-weight: 600;
+    line-height: 48px;
     letter-spacing: 1.44px;
     color: var(--text-2, #000);
+    margin: 21px 0 0 0;
 }
