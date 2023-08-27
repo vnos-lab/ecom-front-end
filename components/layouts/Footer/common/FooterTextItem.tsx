@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React, {memo} from "react";
 
 interface FooterTextItemProps {
   title: string;
@@ -12,13 +12,10 @@ interface FooterTextItemProps {
  * @returns Component
  */
 
+
 function FooterTextItem(props: FooterTextItemProps) {
-  const { title, content } = props;
-  return (
-    <div className="text-[16px] font-normal max-w-[175px]" title={title}>
-      {content}
-    </div>
-  );
+  const {title, content} = props
+  return (<div className="text-[16px] font-normal max-w-[175px]" title={title}>{content}</div>)
 }
 
 export default memo(FooterTextItem);
