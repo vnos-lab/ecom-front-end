@@ -2,6 +2,7 @@ import React, { memo } from "react";
 import { Heart, Menu, ShoppingCart } from "lucide-react";
 import Link from "next/link";
 
+import LanguageSwitcher from "@/components/layouts/SaleBanner/LanguageSwitcher";
 import {
   Sheet,
   SheetContent,
@@ -38,7 +39,7 @@ function Header() {
           ))}
         </div>
 
-        <div className="hidden ml-auto sm:flex items-center">
+        <div className="hidden ml-auto md:flex items-center">
           <SearchForm />
 
           <Link href={routes.FAVORITE_PRODUCTS} className="ml-[24px] mr-[16px]">
@@ -61,7 +62,7 @@ function Header() {
                 <SheetTitle>Exclusive</SheetTitle>
 
                 <SheetDescription>
-                  <div className="sm:hidden mt-[16px] mb-[32px] text-black">
+                  <div className="md:hidden mt-[16px] mb-[32px] text-black">
                     <div className="flex gap-[24px] justify-center my-[16px]">
                       <Link href={routes.FAVORITE_PRODUCTS}>
                         <Heart size={24} />
@@ -70,7 +71,10 @@ function Header() {
                       <Link href={routes.CART}>
                         <ShoppingCart size={24} />
                       </Link>
+
+                      <LanguageSwitcher />
                     </div>
+
                     <SearchForm />
                   </div>
 

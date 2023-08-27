@@ -1,10 +1,8 @@
 import React, { memo } from "react";
 import Link from "next/link";
 
-import CurrentLanguage from "@/components/layouts/SaleBanner/CurrentLanguage";
-import { Select, SelectContent, SelectItem } from "@/components/ui/select";
+import LanguageSwitcher from "@/components/layouts/SaleBanner/LanguageSwitcher";
 
-import { ARRAY_LANGUAGES, MAPPING_LANGUAGES } from "@/constants/languages";
 import ROUTES from "@/constants/routes";
 
 function SaleBanner() {
@@ -27,17 +25,7 @@ function SaleBanner() {
         </div>
 
         <div className="col-span-2 text-end hidden md:block">
-          <Select>
-            <CurrentLanguage />
-
-            <SelectContent align="end">
-              {ARRAY_LANGUAGES.map((language) => (
-                <SelectItem value={language} key={language}>
-                  {MAPPING_LANGUAGES[language]}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
+          <LanguageSwitcher />
         </div>
       </div>
     </section>

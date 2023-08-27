@@ -1,6 +1,8 @@
 .Text {
   span {
-    margin-right: 5px;
+    @media (min-width: theme('screens.md')) {
+      margin-right: 5px;
+    }
   }
 
   svg {
