@@ -13,7 +13,7 @@ function SaleBanner() {
 
         <div className="col-span-12 md:col-span-10 lg:col-span-8 md:flex items-center md:justify-start lg:justify-center text-center">
           <span className="mr-2">
-            Summer Sale For All Swim Suits And Free  Express Delivery - OFF 50%!
+            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
           </span>
 
           <Link
