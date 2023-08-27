@@ -4,6 +4,7 @@ import AppButton from "@/components/App/AppButton";
 
 import FlashSales from "./home/FlashSales";
 import HeroBanner from "./home/HeroBanner";
+import SectionService from "@/components/App/SectionService";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <div className="h-[1000px]" />
 
       <FlashSales />
+      <SectionService/>
     </main>
   );
 }
