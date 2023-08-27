@@ -1,6 +1,6 @@
-import React, {memo} from "react";
+import React, { memo } from "react";
 import Link from "next/link";
-import {UrlObject} from "url";
+import { UrlObject } from "url";
 
 interface FooterLinkItemProps {
   title: string;
@@ -16,10 +16,13 @@ interface FooterLinkItemProps {
  * @returns Component
  */
 
-
 function FooterLinkItem(props: FooterLinkItemProps) {
-  const {title, content, href} = props
-  return (<Link className="text-[16px] font-normal" href={href} title={title}>{content}</Link>)
+  const { title, content, href } = props;
+  return (
+    <Link className="text-[16px] font-normal" href={href} title={title}>
+      {content}
+    </Link>
+  );
 }
 
 export default memo(FooterLinkItem);
