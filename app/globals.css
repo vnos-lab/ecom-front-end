@@ -84,3 +84,15 @@
 .font-poppins {
   font-family: var(--font-poppins);
 }
+
+html, body, :root {
+  font-size: 12px;
+
+  @media (min-width: theme('screens.md')) {
+    font-size: 14px;
+  }
+
+  @media (min-width: theme('screens.lg')) {
+    font-size: 16px;
+  }
+}

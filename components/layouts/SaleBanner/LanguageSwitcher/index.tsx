@@ -47,7 +47,7 @@ function LanguageSwitcher() {
     <Select onValueChange={onChangeLanguage}>
       <SelectTrigger
         className={cn(
-          "w-auto h-auto p-0 bg-transparent border-transparent md:ml-auto font-poppins text-[14px] leading-[21px]",
+          "w-auto h-auto p-0 bg-transparent border-transparent md:ml-auto font-poppins text-[0.875rem] leading-[1.5em]",
           styles.Text,
         )}
       >
