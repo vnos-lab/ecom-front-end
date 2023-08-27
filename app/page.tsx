@@ -8,6 +8,8 @@ export default function Home() {
     <main>
       <HeroBanner />
 
+      <div className="h-[1000px]" />
+
       <FlashSales />
     </main>
   );
