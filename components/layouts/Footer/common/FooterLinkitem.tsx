@@ -1,6 +1,6 @@
-import { UrlObject } from "url";
 import React, { memo } from "react";
 import Link from "next/link";
+import { UrlObject } from "url";
 
 interface FooterLinkItemProps {
   title: string;
