@@ -6,7 +6,6 @@ const ROUTES = {
   WISH_LIST: "/wish-list",
 
   FAVORITE_PRODUCTS: "/favorite-products",
-  CART: "/cart",
   SEARCH: (keyword = "") => `/search?keyword=${keyword}`,
 
   PRODUCT_DETAIL: (slug: string) => `/product/${slug}`,
