@@ -1,12 +1,10 @@
 import React from "react";
 
 import AppButton from "@/components/App/AppButton";
-
 import SectionService from "@/components/App/SectionService";
 
 import FlashSales from "./home/FlashSales";
 import HeroBanner from "./home/HeroBanner";
-import SectionService from "@/components/App/SectionService";
 
 export default function Home() {
   return (
