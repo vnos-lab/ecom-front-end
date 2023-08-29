@@ -7,7 +7,7 @@ import ROUTES from "@/constants/routes";
 
 function SaleBanner() {
   return (
-    <section className="bg-black text-mx-gray-1 font-poppins text-[14px] leading-[21px] py-3">
+    <section className="bg-black text-mx-gray-1 font-poppins text-[0.875rem] leading-[1.5em] py-3">
       <div className="container grid grid-cols-12 gap-2">
         <div className="hidden lg:block col-span-2" />
 
@@ -18,7 +18,7 @@ function SaleBanner() {
 
           <Link
             href={ROUTES.PRODUCT_LIST_BY_CATEGORY("clothes")}
-            className="leading-[24px] font-semibold underline"
+            className="leading-[calc(24/14)] font-semibold underline"
           >
             ShopNow
           </Link>

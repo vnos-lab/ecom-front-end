@@ -77,6 +77,9 @@ const config: Config = {
         "mx-black-50p": "rgba(0, 0, 0, 0.5)",
         "mx-gray-1": "#FAFAFA",
         "mx-gray-2": "#F5F5F5",
+        "mx-red": {
+          1: "#DB4444",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

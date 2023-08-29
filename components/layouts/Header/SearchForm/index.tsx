@@ -53,6 +53,7 @@ function SearchForm() {
         toast({
           description: errorMessages.join("\n"),
           variant: "destructive",
+          duration: 3000,
         });
       }
     },
