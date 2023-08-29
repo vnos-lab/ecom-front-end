@@ -1,6 +1,6 @@
 "use client";
 import React, { memo } from "react";
-import { Heart, Eye } from "lucide-react";
+import * as Icons from "lucide-react";
 
 import emptyFn from "@/constants/emptyFn";
 
@@ -60,13 +60,13 @@ function CardProduct(props: CardProductProps) {
                 onClick={handleGetLike}
                 className={Styles.CardProduct_LikeItems}
               >
-                <Heart color="black" size={24} className={Styles.Icons_Heart} />
+                <Icons.Heart color="black" size={24} className={Styles.Icons_Heart} />
               </div>
               <div
                 onClick={handleGetViewDetails}
                 className={Styles.CardProduct_LikeItems}
               >
-                <Eye color="black" size={24} className={Styles.Icons_Heart} />
+                <Icons.Eye color="black" size={24} className={Styles.Icons_Heart} />
               </div>
             </div>
           </div>
