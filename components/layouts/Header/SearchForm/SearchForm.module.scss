@@ -1,0 +1,31 @@
+.Input {
+  min-height: 38px;
+  padding-left: 20px !important;
+  padding-right: 36px !important;
+
+  border-radius: 4px !important;
+
+  color: theme('colors.black');
+
+  background-color: theme('colors.mx-gray-2') !important;
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+
+  @media (min-width: theme('screens.sm')) {
+    min-width: 243px;
+  }
+}
+
+.Icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}

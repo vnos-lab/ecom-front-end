@@ -3,6 +3,10 @@ const ROUTES = {
   CONTACT: "/contact",
   ABOUT: "/about",
 
+  FAVORITE_PRODUCTS: "/favorite-products",
+  CART: "/cart",
+  SEARCH: (keyword = "") => `/search?keyword=${keyword}`,
+
   PRODUCT_DETAIL: (slug: string) => `/product/${slug}`,
   PRODUCT_LIST: "/products",
   PRODUCT_LIST_BY_CATEGORY: (slug: string) => `/products/${slug}`,

@@ -1,0 +1,15 @@
+.Text {
+  span {
+    @media (min-width: theme('screens.md')) {
+      margin-right: 5px;
+    }
+  }
+
+  svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    opacity: 1;
+  }
+}

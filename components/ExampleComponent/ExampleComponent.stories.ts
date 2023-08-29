@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import emptyFn from "../../constants/emptyFn";
+import emptyFn from "@/constants/emptyFn";
 
 import ExampleComponent from ".";
 
@@ -19,6 +19,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Example: Story = {
   args: {
+    label: "Một component đơn giản",
     onClick: emptyFn,
   },
 };

@@ -6,6 +6,7 @@ import { Inter, Poppins } from "next/font/google";
 import Footer from "@/components/layouts/Footer";
 import Header from "@/components/layouts/Header";
 import SaleBanner from "@/components/layouts/SaleBanner";
+import { Toaster } from "@/components/ui/toaster";
 
 import "./globals.css";
 
@@ -46,6 +47,8 @@ export default function RootLayout({
         <div className="flex-1">{children}</div>
 
         <Footer />
+
+        <Toaster />
       </body>
     </html>
   );

@@ -12,9 +12,12 @@ const config: Config = {
   theme: {
     container: {
       center: true,
-      padding: "0",
+      padding: "15px",
       screens: {
-        xl: "1170px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1200px",
       },
     },
     extend: {
@@ -57,6 +60,23 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+
+        /**
+         * @description: Custom colors for the application
+         * @see https://tailwindcss.com/docs/customizing-colors
+         * 2 types of colors:
+         * 1. Percentage based colors (e.g. --mx-black-50p for 50% black)
+         * 2. Custom colors (e.g. --mx-gray-1 for #FAFAFA, --mx-gray-2 for #F5F5F5, etc.)
+         */
+        /**
+         * FIXME: We need to fix the names of the colors, following the pattern from
+         * https://tailwindcss.com/docs/functions-and-directives#theme
+         */
+        transparent: "transparent",
+        "mx-black-30p": "rgba(0, 0, 0, 0.3)",
+        "mx-black-50p": "rgba(0, 0, 0, 0.5)",
+        "mx-gray-1": "#FAFAFA",
+        "mx-gray-2": "#F5F5F5",
       },
       borderRadius: {
         lg: "var(--radius)",

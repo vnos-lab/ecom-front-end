@@ -71,6 +71,8 @@
       "components": [ "Link" ],
       "specialLink": [ "hrefLeft", "hrefRight" ],
       "aspects": [ "invalidHref", "preferButton" ]
-    }]
+    }],
+    "react/require-default-props": 0,
+    "import/order": 0
   }
 }
