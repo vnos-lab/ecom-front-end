@@ -24,6 +24,7 @@ function SendEmailForm() {
         /**
          * TODO: Handle search
          */
+        // eslint-disable-next-line no-console
         console.log(formData);
       } else {
         const errorMessages = formValid.error.issues.map(
