@@ -5,22 +5,21 @@ import { Heart, Eye } from "lucide-react";
 import emptyFn from "@/constants/emptyFn";
 
 import Styles from "./CardProduct.module.css";
-import Image from "next/image";
-import InconPlay from "@/public/images/icon_play.png";
 import ViewStartFn from "@/components/CardProduct/viewStartFn";
+import Link from "next/link";
 
 interface CardProductProps {
-  datas?: Array<{
+  datas?: {
     id: number;
     giamgia?: string;
     name: string;
     giamoi?: string;
     giacu?: string;
-    saorview?: string;
-    totalReview?: string;
+    saorview: string;
+    totalReview: string;
     likeProduct?: boolean;
     imgProduct: string;
-  }>;
+  };
   onClick?: () => void;
   // className?: string;
   // handleOnclick?: () => void;
@@ -34,17 +33,20 @@ interface CardProductProps {
  */
 
 function CardProduct(props: CardProductProps) {
-  // const { className, onClick } = props;
+  const { datas } = props;
+  if (!datas) {
+    return <p>Loading....</p>
+  }
   const handleOnclick = () => {
-    console.log(props.datas.giamoi);
+    console.log(datas.giamoi);
   };
 
   const handleGetLike = () => {
-    console.log(props.datas.id);
+    console.log(datas.id);
   };
 
   const handleGetViewDetails = () => {
-    console.log(props.datas.id);
+    console.log(datas.id);
   };
 
   return (
@@ -52,9 +54,7 @@ function CardProduct(props: CardProductProps) {
       <div className={Styles.container}>
         <div>
           <div className={Styles.CardProduct_SaleLike}>
-            <p className={Styles.CardProduct_discount}>
-              {props.datas.giamgia}%
-            </p>
+            <p className={Styles.CardProduct_discount}>{datas.giamgia}%</p>
             <div className={Styles.CardProduct_BoxLikeView}>
               <div
                 onClick={handleGetLike}
@@ -71,10 +71,11 @@ function CardProduct(props: CardProductProps) {
             </div>
           </div>
           <div className={Styles.CardProduct_IconPlay}>
-            <img src={props.datas.imgProduct}
+            <img
+              src={datas.imgProduct}
               alt="icon_play"
               className={Styles.CardProduct_avatar}
-              width="auto" 
+              width="auto"
               height="auto"
             />
           </div>
@@ -84,16 +85,22 @@ function CardProduct(props: CardProductProps) {
         </div>
       </div>
       <div className={Styles.CardProduct_Box_Details}>
-        <p className={Styles.CardProduct_Details_name}>{props.datas.name}</p>
+        <Link href="#">
+          <p className={Styles.CardProduct_Details_name}>{datas.name}</p>
+        </Link>
         <div className={Styles.CardProduct_Details_prime}>
-          <p className={Styles.CardProduct_Details_prime_new}>${props.datas.giamoi}</p>
-          <p className={Styles.CardProduct_Details_prime_old}>${props.datas.giacu}</p>
+          <p className={Styles.CardProduct_Details_prime_new}>
+            ${datas.giamoi}
+          </p>
+          <p className={Styles.CardProduct_Details_prime_old}>${datas.giacu}</p>
         </div>
         <div className={Styles.CardProduct_Details_reivew}>
           <div className={Styles.CardProduct_Details_review_start}>
-            <ViewStartFn data={props.datas.saorview}/>
+            <ViewStartFn data={datas.saorview} />
           </div>
-          <p className={Styles.CardProduct_Details_review_total}>({props.datas.totalReview})</p>
+          <p className={Styles.CardProduct_Details_review_total}>
+            ({datas.totalReview})
+          </p>
         </div>
       </div>
     </div>
