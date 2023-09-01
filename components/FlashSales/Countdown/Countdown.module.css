@@ -1,0 +1,23 @@
+.nameItemTime {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    color: var(--text-2, #000);
+    margin-bottom: 4px;
+}
+.valueTime {
+    color: var(--text-2, #000);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 93.75% */
+    letter-spacing: 1.28px;
+}
+.spaceItems {
+    color: #E07575;
+    font-size: bl;
+    font-size: 33px;
+    font-weight: bold;
+    margin: 9px 17px 0px 17px;
+}
