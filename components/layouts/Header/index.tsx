@@ -20,7 +20,7 @@ import SearchForm from "./SearchForm";
 
 function Header() {
   return (
-    <header className="border-b-mx-black-30p border-b-[1px] sticky top-0 text-black bg-white">
+    <header className="border-b-mx-black-30p border-b-[1px] sticky top-0 z-header text-black bg-white">
       <div className="min-h-[94px] container pt-[40px] pb-[16px] flex items-center">
         <div className="font-inter font-bold text-[1.5rem] leading-[1em] mr-auto">
           Exclusive

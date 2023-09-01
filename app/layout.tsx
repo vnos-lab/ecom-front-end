@@ -3,6 +3,7 @@ import classnames from "classnames";
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 
+import ScrollToTop from "@/components/App/ButtonScrollTop";
 import Footer from "@/components/layouts/Footer";
 import Header from "@/components/layouts/Header";
 import SaleBanner from "@/components/layouts/SaleBanner";
@@ -47,7 +48,7 @@ export default function RootLayout({
         <div className="flex-1 relative">{children}</div>
 
         <Footer />
-
+        <ScrollToTop />
         <Toaster />
       </body>
     </html>

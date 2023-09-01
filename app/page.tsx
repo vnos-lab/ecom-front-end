@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 import AppButton from "@/components/App/AppButton";
@@ -12,8 +14,7 @@ export default function Home() {
 
       <AppButton>Send Message</AppButton>
 
-      <div className="h-[1000px]" />
-
+      <div className="h-[3000px]" />
       <FlashSales />
     </main>
   );
