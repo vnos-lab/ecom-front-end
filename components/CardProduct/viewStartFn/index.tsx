@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable prettier/prettier */
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable prettier/prettier */
@@ -7,9 +9,7 @@ import * as React from "react";
 import Styles from "../CardProduct.module.css";
 
 export interface viewStartFnProps {
-  props?: {
-    data: string;
-  };
+  data: string;
 }
 
 export default function viewStartFn(props: viewStartFnProps) {

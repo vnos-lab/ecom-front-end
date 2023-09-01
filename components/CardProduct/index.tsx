@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable no-console */
 /* eslint-disable react/default-props-match-prop-types */

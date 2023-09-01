@@ -1,3 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable react/function-component-definition */
+/* eslint-disable prettier/prettier */
+
 "use client";
 
 import React, { useEffect, useState } from "react";
