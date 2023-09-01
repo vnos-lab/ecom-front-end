@@ -1,5 +1,7 @@
 "use client";
-import React, { useState, useEffect } from "react";
+
+import React, { useEffect, useState } from "react";
+
 import Styles from "./Countdown.module.css";
 
 interface CountdownProps {

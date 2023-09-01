@@ -1,4 +1,5 @@
 import * as React from "react";
+
 import Styles from "../CardProduct.module.css";
 
 export interface viewStartFnProps {
@@ -9,10 +10,10 @@ export interface viewStartFnProps {
 
 export default function viewStartFn(props: viewStartFnProps) {
   const { data } = props;
-  let numStars = Number(data);
-  let numRepeats = numStars <= 5 ? numStars : 5;
+  const numStars = Number(data);
+  const numRepeats = numStars <= 5 ? numStars : 5;
 
-  let extraStars = 5 - numRepeats;
+  const extraStars = 5 - numRepeats;
 
   return (
     <div className={Styles.CardProduct_BoxReviews}>

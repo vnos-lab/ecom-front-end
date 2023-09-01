@@ -1,8 +1,10 @@
 import React from "react";
 
-import FlashSales from "../components/FlashSales";
-import HeroBanner from "./home/HeroBanner";
 import CardProduct from "@/components/CardProduct";
+
+import FlashSales from "../components/FlashSales";
+
+import HeroBanner from "./home/HeroBanner";
 
 export default function Home() {
   const datas = {

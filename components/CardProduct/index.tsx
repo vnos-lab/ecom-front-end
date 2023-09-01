@@ -1,12 +1,14 @@
 "use client";
+
 import React, { memo } from "react";
 import * as Icons from "lucide-react";
+import Link from "next/link";
+
+import ViewStartFn from "@/components/CardProduct/viewStartFn";
 
 import emptyFn from "@/constants/emptyFn";
 
 import Styles from "./CardProduct.module.css";
-import ViewStartFn from "@/components/CardProduct/viewStartFn";
-import Link from "next/link";
 
 interface CardProductProps {
   datas?: {
@@ -35,7 +37,7 @@ interface CardProductProps {
 function CardProduct(props: CardProductProps) {
   const { datas } = props;
   if (!datas) {
-    return <p>Loading....</p>
+    return <p>Loading....</p>;
   }
   const handleOnclick = () => {
     console.log(datas.giamoi);
@@ -60,13 +62,21 @@ function CardProduct(props: CardProductProps) {
                 onClick={handleGetLike}
                 className={Styles.CardProduct_LikeItems}
               >
-                <Icons.Heart color="black" size={24} className={Styles.Icons_Heart} />
+                <Icons.Heart
+                  color="black"
+                  size={24}
+                  className={Styles.Icons_Heart}
+                />
               </div>
               <div
                 onClick={handleGetViewDetails}
                 className={Styles.CardProduct_LikeItems}
               >
-                <Icons.Eye color="black" size={24} className={Styles.Icons_Heart} />
+                <Icons.Eye
+                  color="black"
+                  size={24}
+                  className={Styles.Icons_Heart}
+                />
               </div>
             </div>
           </div>
