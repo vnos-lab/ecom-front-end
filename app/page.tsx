@@ -16,7 +16,7 @@ export default function Home() {
       <div className="h-[1000px]" />
 
       <FlashSales />
-      <SectionService/>
+      <SectionService />
     </main>
   );
 }

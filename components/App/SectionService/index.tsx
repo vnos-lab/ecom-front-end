@@ -1,38 +1,19 @@
 import React, { memo } from "react";
-import * as Icons from "lucide-react";
 
+import serviceContents from "@/components/App/SectionService/constants";
 import ServiceItem from "@/components/App/SectionService/ServiceItem";
 
 function SectionService() {
   return (
-    <section className="container flex flex-col items-center gap-y-[40px] lg:gap-x-[88px] lg:justify-between lg:flex-row md:flex-row md:gap-0 md:gap-x-[10px] md:w-full sm:flex-col sm:items-center sm:gap-y-[40px]">
-      <ServiceItem
-        title="FREE AND FAST DELIVERY"
-        description="Free delivery for all orders over $140"
-      >
-        <Icons.Truck
-          className="h-[30px] w-[30px] lg:h-[40px] lg:w-[40px]"
-          stroke="white"
-        />
-      </ServiceItem>
-      <ServiceItem
-        title="24/7 CUSTOMER SERVICE"
-        description="Friendly 24/7 customer support"
-      >
-        <Icons.Headphones
-          className="h-[30px] w-[30px] lg:h-[40px] lg:w-[40px]"
-          stroke="white"
-        />
-      </ServiceItem>
-      <ServiceItem
-        title="MONEY BACK GUARANTEE"
-        description="We reurn money within 30 days"
-      >
-        <Icons.ShieldCheck
-          className="h-[30px] w-[30px] lg:h-[40px] lg:w-[40px]"
-          stroke="white"
-        />
-      </ServiceItem>
+    <section className="container flex flex-col items-start gap-y-[24px] lg:gap-x-[88px] lg:justify-center lg:flex-row md:flex-row md:justify-center md:gap-0 md:gap-x-[10px] md:w-full sm:flex-col sm:items-center sm:gap-y-[40px]">
+      {serviceContents.map((content) => (
+        <ServiceItem key={content.title} {...content}>
+          <content.icon
+            className="h-[30px] w-[30px] lg:h-[40px] lg:w-[40px]"
+            stroke="white"
+          />
+        </ServiceItem>
+      ))}
     </section>
   );
 }
