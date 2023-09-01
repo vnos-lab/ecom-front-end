@@ -1,17 +1,22 @@
-/* eslint-disable react/function-component-definition */
-import React from "react";
+/* eslint-disable simple-import-sort/imports */
+/* eslint-disable react/self-closing-comp */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable prettier/prettier */
+import * as React from 'react';
+import SectionTitle from '@/components/SectionTitle';
 
-import Countdown from "@/components/FlashSales/Countdown";
+export interface IAppProps {
 
-const App: React.FC = () => {
-  const targetTimestamp = 1698245460; // Thay thế bằng timestamp mong muốn
+}
 
+export default function FlashSales (props: IAppProps) {
+  const dataSection = {
+    title: "Today’s",
+    titleCategory: "Flash Sales"
+  }
   return (
-    <div>
-      <h1>Đếm ngược thời gian</h1>
-      <Countdown targetTimestamp={targetTimestamp} />
+    <div className="flex h-[103px]">
+      <SectionTitle dataSection={dataSection}/>
     </div>
   );
-};
-
-export default App;
+}

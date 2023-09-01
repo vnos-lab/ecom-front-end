@@ -1,8 +1,8 @@
+/* eslint-disable prettier/prettier */
 import React from "react";
 
-import CardProduct from "@/components/CardProduct";
-
-import FlashSales from "../components/FlashSales";
+import AppButton from "@/components/App/AppButton";
+import FlashSales from "@/components/FlashSales";
 
 import HeroBanner from "./home/HeroBanner";
 
@@ -21,6 +21,8 @@ export default function Home() {
   return (
     <main>
       <HeroBanner />
+
+      <AppButton>Send Message</AppButton>
 
       <div className="h-[1000px]" />
 
