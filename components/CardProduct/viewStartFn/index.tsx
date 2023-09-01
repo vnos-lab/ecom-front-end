@@ -1,14 +1,19 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable prettier/prettier */
+/* eslint-disable @typescript-eslint/naming-convention */
 import * as React from "react";
 
 import Styles from "../CardProduct.module.css";
 
 export interface viewStartFnProps {
-  props?: Array<{
+  props?: {
     data: string;
-  }>;
+  };
 }
 
 export default function viewStartFn(props: viewStartFnProps) {
+  console.log(props)
   const { data } = props;
   const numStars = Number(data);
   const numRepeats = numStars <= 5 ? numStars : 5;

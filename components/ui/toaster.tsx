@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable lines-around-directive */
 /* eslint-disable prettier/prettier */
 "use client";

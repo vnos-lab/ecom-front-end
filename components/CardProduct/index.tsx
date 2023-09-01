@@ -1,3 +1,12 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable no-console */
+/* eslint-disable react/default-props-match-prop-types */
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable react/no-unused-prop-types */
+/* eslint-disable prettier/prettier */
+
 "use client";
 
 import React, { memo } from "react";

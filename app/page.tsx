@@ -1,10 +1,13 @@
+/* eslint-disable simple-import-sort/imports */
 /* eslint-disable prettier/prettier */
 import React from "react";
 
-import AppButton from "@/components/App/AppButton";
-import FlashSales from "@/components/FlashSales";
+import CardProduct from "@/components/CardProduct";
+
+import FlashSales from "../components/FlashSales";
 
 import HeroBanner from "./home/HeroBanner";
+import AppButton from "@/components/App/AppButton";
 
 export default function Home() {
   const datas = {
