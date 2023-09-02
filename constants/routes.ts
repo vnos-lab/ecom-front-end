@@ -2,9 +2,10 @@ const ROUTES = {
   HOME: "/",
   CONTACT: "/contact",
   ABOUT: "/about",
+  CART: "/cart",
+  WISH_LIST: "/wish-list",
 
   FAVORITE_PRODUCTS: "/favorite-products",
-  CART: "/cart",
   SEARCH: (keyword = "") => `/search?keyword=${keyword}`,
 
   PRODUCT_DETAIL: (slug: string) => `/product/${slug}`,
@@ -17,6 +18,11 @@ const ROUTES = {
   FORGOT_PASSWORD: "/forgot-password",
   RESET_PASSWORD: "/reset-password",
   PROFILE: "/profile",
+
+  // EX : Help
+  POLICY: "/policy",
+  TERMS: "/terms",
+  FAQ: "/faq",
 };
 
 export default ROUTES;
