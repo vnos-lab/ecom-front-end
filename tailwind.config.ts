@@ -73,6 +73,9 @@ const config: Config = {
          * https://tailwindcss.com/docs/functions-and-directives#theme
          */
         transparent: "transparent",
+        mx: {
+          "secondary-2": "#DB4444",
+        },
         "mx-black-30p": "rgba(0, 0, 0, 0.3)",
         "mx-black-50p": "rgba(0, 0, 0, 0.5)",
         "mx-gray-1": "#FAFAFA",
@@ -80,6 +83,8 @@ const config: Config = {
         "mx-red": {
           1: "#DB4444",
         },
+        "mx-unrated-star": "rgba(0, 0, 0, 0.25)",
+        "mx-rated-star": "#FFAD33",
       },
       borderRadius: {
         lg: "var(--radius)",
