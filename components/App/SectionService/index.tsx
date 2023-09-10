@@ -9,7 +9,7 @@ function SectionService() {
       {serviceContents.map((content) => (
         <ServiceItem key={content.title} {...content}>
           <content.icon
-            className="h-[30px] w-[30px] lg:h-[40px] lg:w-[40px]"
+            className="h-[1.875rem] w-[1.875rem] lg:h-[2.5rem] lg:w-[2.5rem]"
             stroke="white"
           />
         </ServiceItem>
