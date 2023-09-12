@@ -1,18 +1,18 @@
 "use client";
 
-import React, { memo } from "react";
+import React, { memo, useCallback } from "react";
 import * as Icons from "lucide-react";
 
-import useScrollPosition from "../../../hooks/useScrollPosition";
+import useScrollPosition from "@/hooks/useScrollPosition";
 
 function ScrollToTop() {
   const visibleButtonScrollTop = useScrollPosition() >= 200;
-  const onScrollTop = () => {
+  const onScrollTop = useCallback(() => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
-  };
+  }, []);
   if (visibleButtonScrollTop) {
     return (
       <button
