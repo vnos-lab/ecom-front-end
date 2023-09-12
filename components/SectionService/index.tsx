@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 
-import serviceContents from "@/components/App/SectionService/constants";
-import ServiceItem from "@/components/App/SectionService/ServiceItem";
+import serviceContents from "@/components/SectionService/constants";
+import ServiceItem from "@/components/SectionService/ServiceItem";
 
 function SectionService() {
   return (

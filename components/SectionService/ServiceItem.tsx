@@ -1,7 +1,6 @@
-import React, { memo, ReactNode } from "react";
+import React, { memo, PropsWithChildren } from "react";
 
-interface ServiceItemProps {
-  children: ReactNode;
+interface ServiceItemProps extends PropsWithChildren {
   title: string;
   description: string;
 }
