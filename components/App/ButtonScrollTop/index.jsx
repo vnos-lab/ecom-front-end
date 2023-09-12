@@ -24,6 +24,7 @@ function ScrollToTop() {
       </button>
     );
   }
+  return null;
 }
 
 export default memo(ScrollToTop);
