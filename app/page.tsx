@@ -12,8 +12,7 @@ export default function Home() {
 
       <AppButton>Send Message</AppButton>
 
-      <div className="h-[1000px]" />
-
+      <div className="h-[3000px]" />
       <FlashSales />
     </main>
   );
